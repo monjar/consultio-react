@@ -49,7 +49,7 @@ h1::-moz-selection {
 
 .section {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     min-height: 800px;
     background: white;
     position: relative;
@@ -57,11 +57,12 @@ h1::-moz-selection {
 
 .sectionWrapper {
     width: 85%;
-    height: 100%;
+    /* height: 100%; */
     margin: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     position: relative;
 }
 
@@ -545,14 +546,15 @@ nav {
 
 .services .grid {
     display: grid;
-    grid-template-columns: 500px 500px;
+
+    grid-template-columns: 400px 400px 400px;
     grid-column-gap: 130px;
     grid-template-rows: 150px 150px;
     grid-row-gap: 30px;
 }
 
 .services .grid .card {
-    width: 420px;
+    width: 350px;
     padding: 43px 40px;
     background: linear-gradient(to bottom right, #313131, #0F0F0F);
     border-radius: 5px;

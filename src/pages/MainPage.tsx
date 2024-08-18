@@ -3,6 +3,7 @@ import './MainPage.css';
 import NavBar from '../components/NavBar';
 import MainPageHeader from '../components/MainPageHeader';
 import Services from '../components/Services';
+import Teams from '../components/Teams';
 
 function MainPage() {
 
@@ -16,6 +17,8 @@ function MainPage() {
 
             </div>
             <Services />
+
+            <Teams />
 
 
         </>
