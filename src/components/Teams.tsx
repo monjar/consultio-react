@@ -1,4 +1,4 @@
-import { PropsWithChildren, useState } from "react"
+import { useState } from "react"
 import "./Teams.css"
 
 function Teams(props: any) {
@@ -29,7 +29,7 @@ function Teams(props: any) {
             <div className="teams">
 
                 <div className="teamspanel">
-                    <div className={"container " + "selected-" + selectedBox}>
+                    <div className={"container selected-" + selectedBox}>
                         {teamData.map((member: any, index: number) => {
 
                             const numString: string = (index + 1).toString();

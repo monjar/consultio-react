@@ -32,7 +32,7 @@ function NavBar() {
     }
     return (<nav>
         <div className="navWrapper">
-            <a href="" id="logo">Consultio</a>
+            <a href="." id="logo">Consultio</a>
             <div className="right">
                 <div id="nav-icon" className={(isOpen ? "open" : "")} onClick={onNavBarClick}>
                     <span></span>
@@ -41,9 +41,9 @@ function NavBar() {
                 </div>
                 <div className={"overlay " + (isOpen ? "open" : "")}>
                     <div className="overlayContent">
-                        <a href="#" id="services" className={(isOpen ? "open" : "")} >Services</a>
-                        <a href="#" id="work" className={(isOpen ? "open" : "")} >Our work</a>
-                        <a href="#" id="contact" className={(isOpen ? "open" : "")} >Contact</a>
+                        <a href="." id="services" className={(isOpen ? "open" : "")} >Services</a>
+                        <a href="." id="work" className={(isOpen ? "open" : "")} >Our work</a>
+                        <a href="." id="contact" className={(isOpen ? "open" : "")} >Contact</a>
                         <p className={(isOpen ? "open" : "")} >Copyright 2018</p>
                     </div>
                 </div>
