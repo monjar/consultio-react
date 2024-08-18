@@ -50,7 +50,7 @@ h1::-moz-selection {
 .section {
     width: 100vw;
     min-height: 100vh;
-    min-height: 800px;
+    min-height: 400px;
     background: white;
     position: relative;
 }
@@ -431,6 +431,20 @@ nav {
     100% {
         opacity: 1;
     }
+}
+
+hr.gradient {
+    height: 3px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(90deg,
+            rgba(13, 8, 96, 1) 0%,
+            rgba(9, 9, 121, 1) 11%,
+            rgba(6, 84, 170, 1) 31%,
+            rgba(0, 255, 113, 1) 100%);
+
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .circle.orange {

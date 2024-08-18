@@ -3,7 +3,7 @@ function MainPageHeader() {
     return (<div className="header">
         <div className="headerWrapper">
             <h6>we do</h6>
-            <h1>Web Design <br /> & Development</h1>
+            <h1>Software Design<br /> & Development</h1>
             <div className="circle blue"></div>
             <div className="square red"></div>
             <div className="circle orange"></div>

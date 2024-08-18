@@ -32,7 +32,7 @@ function NavBar() {
     }
     return (<nav>
         <div className="navWrapper">
-            <a href="" id="logo">Powit</a>
+            <a href="" id="logo">Consultio</a>
             <div className="right">
                 <div id="nav-icon" className={(isOpen ? "open" : "")} onClick={onNavBarClick}>
                     <span></span>
