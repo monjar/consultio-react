@@ -1,6 +1,5 @@
 import { PropsWithChildren, useState } from "react"
 import "./Teams.css"
-import { TbBrandCpp, TbBrandLinkedin } from "react-icons/tb";
 
 function Teams(props: any) {
 
