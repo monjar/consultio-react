@@ -9,7 +9,7 @@
 
 .teamspanel {
     place-content: center;
-    width: 80%;
+    width: 75%;
     /* min-height: 100vh; */
     display: flex;
     justify-content: center;

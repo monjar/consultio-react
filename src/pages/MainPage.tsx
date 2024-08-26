@@ -5,6 +5,7 @@ import MainPageHeader from '../components/MainPageHeader';
 import Services from '../components/Services';
 import Teams from '../components/Teams';
 import { TbBrandLinkedin } from 'react-icons/tb';
+import Gallery from '../components/Gallery';
 
 const SocialIcons = {
     "LinkedIn": TbBrandLinkedin
@@ -59,6 +60,8 @@ function MainPage() {
             <Services />
             <hr className="gradient" />
             <Teams SocialIcons={SocialIcons} TeamData={TeamData} />
+            <hr className="gradient" />
+            <Gallery />
 
 
         </>
