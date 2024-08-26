@@ -2,12 +2,31 @@
 import "./Gallery.css"
 function Gallery() {
     const galleryItems = [
-        'https://images.unsplash.com/photo-1499198116522-4a6235013d63?auto=format',
-        'https://images.unsplash.com/photo-1492760864391-753aaae87234?auto=format',
+        './magehands.mp4',
+        './pianohands.mkv',
         'https://images.unsplash.com/photo-1503631285924-e1544dce8b28?auto=format',
         'https://images.unsplash.com/photo-1510425463958-dcced28da480?auto=format',
         'https://images.unsplash.com/photo-1503602642458-232111445657?auto=format',
     ];
+
+    const playVideo = (event: any) => {
+        const video = event.target;
+        const isPlaying = video.currentTime > 0 && !video.paused && !video.ended
+            && video.readyState > video.HAVE_CURRENT_DATA;
+
+        if (!isPlaying)
+            event.target.play()
+    }
+    const PauseVideo = (event: any) => {
+        const video = event.target;
+
+        const isPlaying = video.currentTime > 0 && !video.paused && !video.ended
+            && video.readyState > video.HAVE_CURRENT_DATA;
+
+        if (isPlaying)
+            event.target.pause()
+    }
+
     return (<div className="gallery-container">
         <h1 className="gallery-title">Gallery</h1>
 
@@ -22,13 +41,13 @@ function Gallery() {
                     // }} */}
             {galleryItems.map((url, index) => (
                 <div className="gallery-item">
-                    <video autoPlay playsInline muted loop preload="auto" poster="http://i.imgur.com/xHO6DbC.png"
+                    <video playsInline muted loop preload="auto"
                         key={index}
-
-
+                        onMouseOver={playVideo}
+                        onMouseOut={PauseVideo}
                     >
-
-                        <source src="https://storage.coverr.co/videos/7RzPQrmB00s01rknm8VJnXahEyCy4024IMG?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjI5MTg2NjA0fQ.M8oElp5VNO8bWEWmdF2nGiu3qDOOYRFfP8wkKvl8I20" />
+                        {/* <iframe src="https://www.youtube.com/embed/-PEmQkcHclY" title="MageHands" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
+                        <source src={url} />
 
                     </video>
                     <div className="gallery-item-title">

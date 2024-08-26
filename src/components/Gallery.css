@@ -36,14 +36,15 @@
     background-position: center;
     /* background-size: contain;
     background-repeat: none; */
-    transition: flex 0.8s ease;
+    transition: flex 0.9s ease;
+
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
     object-fit: cover;
-
+    background: linear-gradient(to bottom right, #444444, #0F0F0F);
 
     &:hover {
         flex: 7;
@@ -76,6 +77,20 @@
     left: 30px;
     top: 5em;
     font-size: 1.5em;
+}
+
+.gallery-item video {
+    /* height: 100%;
+    width: auto; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item:hover video {
+    /* 
+    width: 100%;
+    height: auto; */
 }
 
 .gallery-item:hover .gallery-item-title,
