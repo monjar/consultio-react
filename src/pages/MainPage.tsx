@@ -22,14 +22,14 @@ const TeamData = [
         ]
     }, {
         "fullName": "Amirali Monjar",
-        "description": "In reasonable compliment favourable is connection dispatched in terminated. Do esteem object we called father excuse remove. So dear real on like more it. Laughing for two families addition expenses surprise the. If sincerity he to curiosity arranging. Learn taken terms be as. Scarcely mrs produced too removing new old.",
+        "description": "Amirali holds an MSc in Games Development and a BSc in Computer Engineering, with expertise in software engineering, game design and programming, computer graphics, and web, mobile, and desktop application development. He is also highly skilled in Virtual and Augmented Reality (VR/AR) development. Combining technical proficiency with a passion for creativity, Amirali excels at crafting immersive, interactive experiences that push the boundaries of innovation. His work blends artistic vision with precise engineering, resulting in projects that are both visually stunning and technically sound. From designing compelling games to developing cutting-edge VR/AR solutions, he is committed to delivering high-quality, engaging experiences that captivate users.",
         "img": "https://i.postimg.cc/sgBkfbtx/img-1.jpg",
         "socials": [
             { "name": "LinkedIn", "link": "", }
         ]
     }, {
-        "fullName": "Amirali Monjar",
-        "description": "In reasonable compliment favourable is connection dispatched in terminated. Do esteem object we called father excuse remove. So dear real on like more it. Laughing for two families addition expenses surprise the. If sincerity he to curiosity arranging. Learn taken terms be as. Scarcely mrs produced too removing new old.",
+        "fullName": "Ali Shahri",
+        "description": "Ali holds a BSc and PhD in Software Engineering, as well as an MSc in Ethical Hacking and Cyber Security. His expertise concerns system design, system architecture, and requirements engineering. With a deep understanding of designing and architecting complex software systems, Ali ensures they are both scalable and secure. Over the years, he has successfully designed, assessed, and delivered numerous projects, including the development of specialised modelling languages that streamline and enhance the software design process. His approach guarantees that every project is built on a solid foundation, adhering to the highest standards of quality and security.",
         "img": "https://i.postimg.cc/sgBkfbtx/img-1.jpg",
         "socials": [
             { "name": "LinkedIn", "link": "", }
