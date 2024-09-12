@@ -64,7 +64,7 @@ function MainPage() {
             <hr className="gradient" />
             <Gallery />
             <hr className="gradient" />
-            <ContactUs />
+            <ContactUs SocialIcons={SocialIcons} />
             <hr className="gradient" />
 
 

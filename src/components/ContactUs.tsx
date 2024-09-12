@@ -3,13 +3,25 @@ import "./ContactUs.css"
 
 import React, { useEffect, useRef } from "react";
 
-const ContactUs: React.FC = () => {
+const ContactUs = (props: any) => {
     // Use refs to target the input elements
     const nameInputRef = useRef<HTMLInputElement>(null);
     const emailInputRef = useRef<HTMLInputElement>(null);
     const phoneInputRef = useRef<HTMLInputElement>(null);
     const messageInputRef = useRef<HTMLTextAreaElement>(null);
+    const socialIcons: {
+        [key: string]: React.ComponentType<{
+            className?: string;
+        }>
+    } = props.SocialIcons
 
+
+    const getSocial = (name: string) => {
+
+        const ItemIcon = socialIcons[name]
+        return (<ItemIcon className="contact-social-item" />)
+
+    }
     // Add focus/blur event listeners for input elements
     useEffect(() => {
         const inputs = [
@@ -77,7 +89,8 @@ const ContactUs: React.FC = () => {
                         <p>Connect with us:</p>
                         <div className="social-icons">
                             <a href="#">
-                                <i className="fab fa-facebook-f"></i>
+                                {/* <i className="fab fa-facebook-f"></i> */}
+                                {getSocial("LinkedIn")}
                             </a>
                             <a href="#">
                                 <i className="fab fa-twitter"></i>
