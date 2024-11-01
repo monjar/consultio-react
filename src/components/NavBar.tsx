@@ -7,6 +7,8 @@
 //     });
 
 import { useState } from "react"
+import { scroller, animateScroll } from "react-scroll";
+
 import "../pages/MainPage.css"
 //     // Scroll Reveal
 //     // ScrollReveal().reveal('.services .grid .card');
@@ -24,15 +26,26 @@ import "../pages/MainPage.css"
 
 
 
-function NavBar() {
+function NavBar(props: any) {
 
     const [isOpen, setIsOpen] = useState(false)
     const onNavBarClick = () => {
         setIsOpen(!isOpen)
     }
+
+
+    const GetOnScrollToSection = (sectionName: string) => {
+        return () => {
+            setIsOpen(false);
+            scroller.scrollTo(sectionName + "-scroll-section", {
+                delay: 0,
+                smooth: "easeInOutQuart",
+            });
+        }
+    };
     return (<nav>
         <div className="navWrapper">
-            <a href="." id="logo">Consultio</a>
+            <a href="." id="logo">{props.siteName}</a>
             <div className="right">
                 <div id="nav-icon" className={(isOpen ? "open" : "")} onClick={onNavBarClick}>
                     <span></span>
@@ -41,9 +54,10 @@ function NavBar() {
                 </div>
                 <div className={"overlay " + (isOpen ? "open" : "")}>
                     <div className="overlayContent">
-                        <a href="." id="services" className={(isOpen ? "open" : "")} >Services</a>
-                        <a href="." id="work" className={(isOpen ? "open" : "")} >Our work</a>
-                        <a href="." id="contact" className={(isOpen ? "open" : "")} >Contact</a>
+                        <div id="services" className={(isOpen ? "overlay-item open" : "")} onClick={ GetOnScrollToSection("services")}>Services</div>
+                        <div id="team" className={(isOpen ? "overlay-item open" : "")} onClick={GetOnScrollToSection("team")}>The team</div>
+                        <div id="work" className={(isOpen ? "overlay-item open" : "")} onClick={GetOnScrollToSection("projects")}>Our work</div>
+                        <div id="contact" className={(isOpen ? "overlay-item open" : "")} onClick={GetOnScrollToSection("contact")}>Contact</div>
                         <p className={(isOpen ? "open" : "")} >Copyright 2018</p>
                     </div>
                 </div>

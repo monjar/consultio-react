@@ -46,6 +46,31 @@ const TeamData = [
 ]
 
 
+const ProjectsData = [
+    { url: './magehands.mp4', title: 'Mage Hands', desc: "A VR game set in a fantasy viking world" },
+    { url: './magehands.mp4', title: 'Mage Hands', desc: "A VR game set in a fantasy viking world" },
+    { url: './magehands.mp4', title: 'Mage Hands', desc: "A VR game set in a fantasy viking world" },
+    { url: './magehands.mp4', title: 'Mage Hands', desc: "A VR game set in a fantasy viking world" },
+    { url: './magehands.mp4', title: 'Mage Hands', desc: "A VR game set in a fantasy viking world" },
+];
+
+const ServicesData = {
+    tagline: "we do a lot of stuff, just give us money please. thanks",
+    serviceList:[
+        { title: "Web Development", desc: "Yeah, like... we totally do web dev" },
+        { title: "Web Development", desc: "Yeah, like... we totally do web dev" },
+        { title: "Web Development", desc: "Yeah, like... we totally do web dev" },
+        { title: "Web Development", desc: "Yeah, like... we totally do web dev" },
+        { title: "Web Development", desc: "Yeah, like... we totally do web dev" },
+        { title: "Web Development", desc: "Yeah, like... we totally do web dev" }
+    ]
+
+}
+
+
+
+
+
 function MainPage() {
 
 
@@ -53,17 +78,17 @@ function MainPage() {
         <>
 
             <div className="background">
-                <NavBar />
+                <NavBar siteName="FerdowSoft"/>
                 <MainPageHeader />
 
             </div>
-            <hr className="gradient" />
-            <Services />
-            <hr className="gradient" />
+            <hr className="gradient services-scroll-section" />
+            <Services serviceList={ServicesData.serviceList} desc={ServicesData.tagline}/>
+            <hr className="gradient team-scroll-section" />
             <Teams SocialIcons={SocialIcons} TeamData={TeamData} />
-            <hr className="gradient" />
-            <Gallery />
-            <hr className="gradient" />
+            <hr className="gradient projects-scroll-section" />
+            <Gallery Projects={ProjectsData} />
+            <hr className="gradient contact-scroll-section" />
             <ContactUs SocialIcons={SocialIcons} />
             <hr className="gradient" />
 

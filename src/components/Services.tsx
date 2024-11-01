@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 
-function Services() {
+function Services(props: any) {
 
     //     $('.square.blue').on('inview', function (event, isInView) {
     //         if (isInView) {
@@ -12,6 +12,7 @@ function Services() {
     //         }
     //     });
 
+    const servicesData = props.serviceList
     const { ref, inView } = useInView({
         threshold: 0
     });
@@ -19,33 +20,16 @@ function Services() {
         <div className="sectionWrapper">
             <h6>what we offer</h6>
             <h2>Our services</h2>
-            <p className="description">I am developing these skills from when I was 12 years old. I still love what I do and I would love to share my knowledge with the world.</p>
+            <p className="description">{props.desc}</p>
             <div ref={ref} className={"square blue" + (inView ? " in-view" : "")}></div>
             <div className="grid">
-                <div className="card">
-                    <h3>Web Development</h3>
-                    <p>I create websites and web services.</p>
-                </div>
-                <div className="card">
-                    <h3>Web Design</h3>
-                    <p>I design webpages and web platforms.</p>
-                </div>
-                <div className="card">
-                    <h3>Branding</h3>
-                    <p>I design brand guidelines and brand styles.</p>
-                </div>
-                <div className="card">
-                    <h3>Social Media Marketing</h3>
-                    <p>I run a social media business.</p>
-                </div>
-                <div className="card">
-                    <h3>Social Media Marketing</h3>
-                    <p>I run a social media business.</p>
-                </div>
-                <div className="card">
-                    <h3>Social Media Marketing</h3>
-                    <p>I run a social media business.</p>
-                </div>
+                {servicesData.map((service: any, index: number) => (
+                    <div className="card">
+                        <h3>{service.title}</h3>
+                        <p>{service.desc}</p>
+                    </div>
+                ))}
+                
             </div>
         </div>
     </div>)
