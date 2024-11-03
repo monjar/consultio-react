@@ -574,8 +574,8 @@ hr.gradient {
 }
 
 .services .description {
-    margin-bottom: 60px;
-    width: 685px;
+    margin-bottom: 30px;
+    width: 60%;
     line-height: 40px;
 }
 
@@ -583,17 +583,25 @@ hr.gradient {
     display: grid;
 
     grid-template-columns: 400px 400px 400px;
-    grid-column-gap: 130px;
+    grid-column-gap: 110px;
     grid-template-rows: 150px 150px;
-    grid-row-gap: 30px;
+    grid-row-gap: 25px;
 }
 
 .services .grid .card {
-    width: 350px;
-    padding: 43px 40px;
+    width: 340px;
+    padding: 20px 40px;
     background: linear-gradient(to bottom right, #313131, #0F0F0F);
     border-radius: 5px;
     display: block;
+    transition: width 3s ease-in-out 3s;
+    transition: height 3s ease-in-out 3s;
+}
+
+.services .grid .card:hover {
+    background: linear-gradient(to bottom right, #4c4d4c, #0F0F0F);
+    width: 335px;
+    height: 115px;    
 }
 
 .services .grid .card h3 {
@@ -613,7 +621,7 @@ hr.gradient {
     position: absolute;
     box-shadow: 3px 3px 15px rgba(61, 178, 213, 0.4);
     background: linear-gradient(#4F3DD5, #3DB2D5);
-    top: 100px;
+    top: 110px;
     right: 75px;
     width: 125px;
     height: 125px;

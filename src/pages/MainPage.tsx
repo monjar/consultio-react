@@ -56,16 +56,33 @@ const ProjectsData = [
 ];
 
 const ServicesData = {
-    tagline: "we do a lot of stuff, just give us money please. thanks",
+    tagline: "Partner with us to unlock a world of possibilities for your digital projects-driving growth, innovation, and excellence in every solution we deliver.",
     serviceList:[
-        { title: "Web Development", desc: "Yeah, like... we totally do web dev" },
-        { title: "Web Development", desc: "Yeah, like... we totally do web dev" },
-        { title: "Web Development", desc: "Yeah, like... we totally do web dev" },
-        { title: "Web Development", desc: "Yeah, like... we totally do web dev" },
-        { title: "Web Development", desc: "Yeah, like... we totally do web dev" },
-        { title: "Web Development", desc: "Yeah, like... we totally do web dev" }
+        {
+            title: "Web Development",
+            desc: "Create high-performance websites optimized for user experience and growth."
+        },
+        {
+            title: "Digital Transformation",
+            desc: "Modernise processes with cutting-edge tech for efficiency and agility."
+        },
+        {
+            title: "IT Strategy & Consulting",
+            desc: "Align IT investments with business goals for maximum impact and ROI."
+        },
+        {
+            title: "Cloud Services",
+            desc: "Scale operations with tailored cloud integration and management."
+        },
+        {
+            title: "Software Development",
+            desc: "Build custom software that drives innovation and meets your needs."
+        },
+        {
+            title: "AI-powered Applications",
+            desc: "Develop intelligent solutions to support data-driven strategies."
+        }
     ]
-
 }
 
 
