@@ -66,41 +66,41 @@ const ContactUs = (props: any) => {
                 <div className="contact-info">
                     <h3 className="title">Let's get in touch</h3>
                     <p className="text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-                        dolorum adipisci recusandae praesentium dicta!
+                    Get in touch with us today to see how we can enhance your applications and websites,
+                     creating a seamless, powerful experience for your users!
                     </p>
 
                     <div className="info">
-                        <div className="information">
+                        {/* <div className="information">
                             <i className="fas fa-map-marker-alt"></i>&nbsp;&nbsp;
                             <p>92 Cherry Drive Uniondale, NY 11553</p>
-                        </div>
+                        </div> */}
                         <div className="information">
                             <i className="fas fa-envelope"></i>&nbsp;&nbsp;
-                            <p>lorem@ipsum.com</p>
+                            <p>Sep@enchantedrealms.studio</p>
                         </div>
                         <div className="information">
                             <i className="fas fa-phone"></i>&nbsp;&nbsp;
-                            <p>123-456-789</p>
+                            <p>+447878807771</p>
                         </div>
                     </div>
 
                     <div className="social-media">
                         <p>Connect with us:</p>
                         <div className="social-icons">
-                            <a href=".">
+                            <a href="https://www.linkedin.com/in/amirsepehr-aminian/">
                                 {/* <i className="fab fa-facebook-f"></i> */}
                                 {getSocial("LinkedIn")}
                             </a>
-                            <a href=".">
+                            {/* <a href=".">
                                 <i className="fab fa-twitter"></i>
-                            </a>
-                            <a href=".">
+                            </a> */}
+                            {/* <a href=".">
                                 <i className="fab fa-instagram"></i>
-                            </a>
-                            <a href=".">
+                            </a> */}
+                            {/* <a href=".">
                                 <i className="fab fa-linkedin-in"></i>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>
