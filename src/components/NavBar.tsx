@@ -7,7 +7,7 @@
 //     });
 
 import { useState } from "react"
-import { scroller, animateScroll } from "react-scroll";
+import { scroller } from "react-scroll";
 
 import "../pages/MainPage.css"
 //     // Scroll Reveal
