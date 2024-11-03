@@ -34,7 +34,7 @@ function Gallery(props : any) {
                     //     backgroundImage: `url(${url})`,
                     // }} */}
             {galleryItems.map((project : any, index: number) => (
-                <div className="gallery-item">
+                <div className="gallery-item" key={index}>
                     <video playsInline muted loop preload="auto"
                         key={index}
                         onMouseOver={playVideo}

@@ -24,7 +24,7 @@ function Services(props: any) {
             <div ref={ref} className={"square blue" + (inView ? " in-view" : "")}></div>
             <div className="grid">
                 {servicesData.map((service: any, index: number) => (
-                    <div className="card">
+                    <div className="card" key={index}>
                         <h3>{service.title}</h3>
                         <p>{service.desc}</p>
                     </div>
