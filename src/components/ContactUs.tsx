@@ -77,7 +77,7 @@ const ContactUs = (props: any) => {
                         </div> */}
                         <div className="information">
                             <i className="fas fa-envelope"></i>&nbsp;&nbsp;
-                            <p>Sep@enchantedrealms.studio</p>
+                            <p>amirsepehr.aminian@gmail.com</p>
                         </div>
                         <div className="information">
                             <i className="fas fa-phone"></i>&nbsp;&nbsp;
