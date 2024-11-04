@@ -22,7 +22,9 @@ function Gallery(props : any) {
     }
 
     return (<div className="gallery-container">
-        <h1 className="gallery-title">Gallery</h1>
+        <h6>Where we shined</h6>
+        <h2>Sample Projects</h2>
+        {/* <h1 className="gallery-title">Gallery</h1> */}
 
         <div className="gallery-wrap">
             {/* <div className="gallery-item gallery-item-1"></div>

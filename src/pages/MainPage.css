@@ -464,8 +464,8 @@ hr.gradient {
             rgba(6, 84, 170, 1) 31%,
             rgba(0, 255, 113, 1) 100%);
 
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .circle.orange {
@@ -635,6 +635,14 @@ hr.gradient {
     opacity: 1;
     transition: all 1s ease;
 }
+
+.credits {
+    font-size: 20px;
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
+}
+
+
 
 /* Responsive */
 
