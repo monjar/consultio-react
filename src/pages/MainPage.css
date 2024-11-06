@@ -25,7 +25,7 @@ h2 {
 }
 
 h6 {
-    color: #D6D6D6;
+    color: #e17272;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -79,7 +79,7 @@ h1::-moz-selection {
 nav {
     width: 100vw;
     height: 100px;
-    background: white;
+    background: linear-gradient(to bottom, #f5f5f5, #fefcfc);
     position: absolute;
     top: 0;
     animation: 2s fadeInNav ease;
@@ -476,7 +476,6 @@ hr.gradient {
     animation: circleOrangeMove 2s ease;
     box-shadow: 3px 3px 15px rgba(213, 184, 61, 0.4);
 }
-
 
 .circle {
     border-radius: 50%;

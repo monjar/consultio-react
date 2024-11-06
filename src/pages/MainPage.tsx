@@ -8,6 +8,7 @@ import { TbBrandLinkedin } from 'react-icons/tb';
 import Gallery from '../components/Gallery';
 import ContactUs from '../components/ContactUs';
 import Credits from '../components/Credits';
+import Shapes from '../components/Shapes';
 
 const SocialIcons = {
     "LinkedIn": TbBrandLinkedin
@@ -99,6 +100,7 @@ function MainPage() {
             <div className="background">
                 <NavBar siteName="FerdowSoft"/>
                 <MainPageHeader />
+                <Shapes />
 
             </div>
             <hr className="gradient services-scroll-section" />
