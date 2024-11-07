@@ -58,7 +58,7 @@ function NavBar(props: any) {
                         <div id="team" className={(isOpen ? "overlay-item open" : "")} onClick={GetOnScrollToSection("team")}>The team</div>
                         <div id="work" className={(isOpen ? "overlay-item open" : "")} onClick={GetOnScrollToSection("projects")}>Our work</div>
                         <div id="contact" className={(isOpen ? "overlay-item open" : "")} onClick={GetOnScrollToSection("contact")}>Contact</div>
-                        <p className={(isOpen ? "open" : "")} >Copyright 2018</p>
+                        <p className={(isOpen ? "open" : "")} >Copyright ©{new Date().getFullYear()} FerdowSoft</p>
                     </div>
                 </div>
             </div>
