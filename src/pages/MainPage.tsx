@@ -50,11 +50,11 @@ const TeamData = [
 
 
 const ProjectsData = [
-    { url: './magehands.mp4', type: 'video', title: 'Mage Hands', desc: "A VR game set in a fantasy viking world" },
-    { url: './searchengine.png', type: 'image', title: 'Cord Covid19', desc: "An information retrieval system designed and implemented to search for relevant COVID19 research articles." },
+    { url: './rahnema.jpg', type: 'image', title: 'Platform Engineering', desc: "Supporting Rahnema College with the Web application and platform engineering" },
     { url: './endtoendml.png', type: 'image', title: 'ML pipeline', desc: "end to end machine learning pipeline for a education company" },
+    { url: './searchengine.png', type: 'image', title: 'Cord Covid19', desc: "An information retrieval system designed and implemented to search for relevant COVID19 research articles." },
+    { url: './magehands.mp4', type: 'video', title: 'Mage Hands', desc: "A VR game set in a fantasy viking world" },
     { url: './webdev.png', type: 'image', title: 'Web development', desc: "Web development for a real-estate company" },
-    { url: './rahnema.jpg', type: 'image', title: 'Platform Engineering', desc: "Supporting Rahnema College with the Web application and platform" },
 ];
 
 const ServicesData = {
