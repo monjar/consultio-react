@@ -222,7 +222,11 @@ textarea.contact-input {
 }
 
 .social-media {
-    padding: 2rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    /* padding: 2rem 0 0 0; */
+    justify-content: center;
+    align-items: center;
 }
 
 .social-media p {

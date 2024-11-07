@@ -21,10 +21,10 @@ function Services(props: any) {
             <h6>what we offer</h6>
             <h2>Our services</h2>
             <p className="description">{props.desc}</p>
-            <div ref={ref} className={"square blue" + (inView ? " in-view" : "")}></div>
+            {/* <div ref={ref} className={"square blue" + (inView ? " in-view" : "")}></div> */}
             <div className="grid">
                 {servicesData.map((service: any, index: number) => (
-                    <div className="card">
+                    <div className="card" key={index}>
                         <h3>{service.title}</h3>
                         <p>{service.desc}</p>
                     </div>

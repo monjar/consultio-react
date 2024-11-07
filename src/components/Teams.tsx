@@ -34,6 +34,7 @@ function Teams(props: any) {
 
                             const numString: string = (index + 1).toString();
                             return (<div
+                                key={index}
                                 className={"box " + (selectedBox === numString ? "selected" : "unselected")}
                                 style={{
                                     backgroundImage: `url(${member.img})`

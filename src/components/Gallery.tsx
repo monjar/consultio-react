@@ -1,4 +1,3 @@
-
 import "./Gallery.css"
 function Gallery(props : any) {
     
@@ -21,8 +20,32 @@ function Gallery(props : any) {
             event.target.pause()
     }
 
+    const renderMedia = (project: any, index: number) => {
+        if (project.type === 'video') {
+            return (
+                <video playsInline muted loop preload="auto"
+                    key={index}
+                    onMouseOver={playVideo}
+                    onMouseOut={PauseVideo}
+                >
+                    <source src={project.url} />
+                </video>
+            );
+        } else {
+            return (
+                <img 
+                    src={project.url} 
+                    alt={project.title}
+                    loading="lazy"
+                />
+            );
+        }
+    };
+
     return (<div className="gallery-container">
-        <h1 className="gallery-title">Gallery</h1>
+        <h6>Where we shined</h6>
+        <h2>Sample Projects</h2>
+        {/* <h1 className="gallery-title">Gallery</h1> */}
 
         <div className="gallery-wrap">
             {/* <div className="gallery-item gallery-item-1"></div>
@@ -34,16 +57,8 @@ function Gallery(props : any) {
                     //     backgroundImage: `url(${url})`,
                     // }} */}
             {galleryItems.map((project : any, index: number) => (
-                <div className="gallery-item">
-                    <video playsInline muted loop preload="auto"
-                        key={index}
-                        onMouseOver={playVideo}
-                        onMouseOut={PauseVideo}
-                    >
-                        {/* <iframe src="https://www.youtube.com/embed/-PEmQkcHclY" title="MageHands" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
-                        <source src={project.url} />
-
-                    </video>
+                <div className="gallery-item" key={index}>
+                    {renderMedia(project, index)}
                     <div className="gallery-item-title">
                         {project.title}
                     </div>
