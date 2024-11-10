@@ -1,32 +1,15 @@
-// $(document).ready(function () {
-//     $('#nav-icon').click(function () {
-//         $(this).toggleClass('open');
-//         $(".overlay").toggleClass("open");
-//         $(".overlay a").toggleClass("open");
-//         $(".overlay p").toggleClass("open");
-//     });
-
-import { useState } from "react"
+import React, { useState } from "react"
 import { scroller } from "react-scroll";
 
 import "../pages/MainPage.css"
-//     // Scroll Reveal
-//     // ScrollReveal().reveal('.services .grid .card');
 
-//     $('.square.blue').on('inview', function (event, isInView) {
-//         if (isInView) {
-//             // element is now visible in the viewport
-//             $(this).addClass("in-view");
-//         } else {
-//             // element has gone out of viewport
-//             $(this).removeClass("in-view");
-//         }
-//     });
-// });
+// Define an interface for the props
+interface NavBarProps {
+    siteName: string;
+    // Add other expected props here
+}
 
-
-
-function NavBar(props: any) {
+function NavBar(props: NavBarProps) {
 
     const [isOpen, setIsOpen] = useState(false)
     const onNavBarClick = () => {
@@ -58,7 +41,7 @@ function NavBar(props: any) {
                         <div id="team" className={(isOpen ? "overlay-item open" : "")} onClick={GetOnScrollToSection("team")}>The team</div>
                         <div id="work" className={(isOpen ? "overlay-item open" : "")} onClick={GetOnScrollToSection("projects")}>Our work</div>
                         <div id="contact" className={(isOpen ? "overlay-item open" : "")} onClick={GetOnScrollToSection("contact")}>Contact</div>
-                        <p className={(isOpen ? "open" : "")} >Copyright 2018</p>
+                        <p className={(isOpen ? "open" : "")} >Copyright ©{new Date().getFullYear()} FerdowSoft</p>
                     </div>
                 </div>
             </div>

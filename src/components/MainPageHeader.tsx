@@ -1,13 +1,14 @@
-
+import React from "react";
 function MainPageHeader() {
     return (<div className="header">
         <div className="headerWrapper">
             <h6>we do</h6>
             <h1>Software Design<br /> & Development</h1>
-            <div className="circle blue"></div>
+
+            {/* <div className="circle blue"></div>
             <div className="square red"></div>
-            <div className="circle orange"></div>
-            <div className="triangle green">
+            <div className="circle orange"></div> */}
+            {/* <div className="triangle green">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 177.893 177.893">
                     <defs>
                         <style>{`.a{fill:url(#a);}.b{filter:url(#b);}`}</style>
@@ -27,7 +28,7 @@ function MainPageHeader() {
                         <path className="a" d="M136.727,21104.928l-50.222,100h100Z" transform="translate(-8978.23 -19029.24) rotate(-25)" />
                     </g>
                 </svg>
-            </div>
+            </div> */}
         </div>
     </div>)
 }

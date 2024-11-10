@@ -1,14 +1,29 @@
-import { useState } from "react"
+import React, { useState } from "react"
 import "./Teams.css"
 
-function Teams(props: any) {
+// Define interfaces for the props
+interface TeamMember {
+    fullName: string;
+    img: string;
+    description: string;
+    socials: { name: string }[];
+}
+
+interface SocialIcons {
+    [key: string]: React.ComponentType<{
+        className?: string;
+    }>;
+}
+
+interface TeamsProps {
+    TeamData: TeamMember[];
+    SocialIcons: SocialIcons;
+}
+
+function Teams(props: TeamsProps) {
 
     const teamData = props.TeamData
-    const socialIcons: {
-        [key: string]: React.ComponentType<{
-            className?: string;
-        }>
-    } = props.SocialIcons
+    const socialIcons = props.SocialIcons
 
     const [selectedBox, setSelectedBox] = useState("")
     const onBoxClicked = (boxNumStr: string) => {
@@ -30,10 +45,11 @@ function Teams(props: any) {
 
                 <div className="teamspanel">
                     <div className={"container selected-" + selectedBox}>
-                        {teamData.map((member: any, index: number) => {
+                        {teamData.map((member: TeamMember, index: number) => {
 
                             const numString: string = (index + 1).toString();
                             return (<div
+                                key={index}
                                 className={"box " + (selectedBox === numString ? "selected" : "unselected")}
                                 style={{
                                     backgroundImage: `url(${member.img})`
