@@ -1,19 +1,22 @@
-
+import React, { useEffect, useRef } from "react";
 import "./ContactUs.css"
 
-import React, { useEffect, useRef } from "react";
+// Define a type for the props
+interface ContactUsProps {
+    SocialIcons: {
+        [key: string]: React.ComponentType<{
+            className?: string;
+        }>;
+    };
+}
 
-const ContactUs = (props: any) => {
+const ContactUs = (props: ContactUsProps) => {
     // Use refs to target the input elements
     const nameInputRef = useRef<HTMLInputElement>(null);
     const emailInputRef = useRef<HTMLInputElement>(null);
     const phoneInputRef = useRef<HTMLInputElement>(null);
     const messageInputRef = useRef<HTMLTextAreaElement>(null);
-    const socialIcons: {
-        [key: string]: React.ComponentType<{
-            className?: string;
-        }>
-    } = props.SocialIcons
+    const socialIcons = props.SocialIcons
 
 
     const getSocial = (name: string) => {
@@ -64,7 +67,7 @@ const ContactUs = (props: any) => {
             <img src="img/shape.png" className="square" alt="" /> */}
             <div className="form">
                 <div className="contact-info">
-                    <h3 className="title">Let's get in touch</h3>
+                    <h3 className="title">Let&rsquo;s get in touch</h3>
                     <p className="text">
                     Get in touch with us today to see how we can enhance your applications and websites,
                      creating a seamless, powerful experience for your users!

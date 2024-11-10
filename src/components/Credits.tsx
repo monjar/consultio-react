@@ -1,6 +1,6 @@
-import { useInView } from "react-intersection-observer";
+import React from "react";
 
-function Credits(props: any) {
+function Credits() {
 
     return (<div className="credits">   
         <span className="credits">Copyright ©{new Date().getFullYear()} FerdowSoft</span>

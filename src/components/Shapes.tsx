@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import "./Shapes.css"
 interface Position {
   type: string;
@@ -18,7 +18,7 @@ function Shapes() {
     return distance < minDistance;
   };
 
-  const generateMultipleShapes = () => {
+  const generateMultipleShapes = useCallback(() => {
     const newShapes: Position[] = [];
     const maxAttempts = 100;
     const containerWidth = window.innerWidth;
@@ -64,7 +64,7 @@ function Shapes() {
     
     setShapes(newShapes);
 
-  };
+  }, []);
 
   useEffect(() => {
     generateMultipleShapes();
@@ -73,7 +73,7 @@ function Shapes() {
     };
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [generateMultipleShapes]);
 
   return (
     <div className="shapes-container">

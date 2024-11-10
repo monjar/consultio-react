@@ -1,32 +1,15 @@
-// $(document).ready(function () {
-//     $('#nav-icon').click(function () {
-//         $(this).toggleClass('open');
-//         $(".overlay").toggleClass("open");
-//         $(".overlay a").toggleClass("open");
-//         $(".overlay p").toggleClass("open");
-//     });
-
-import { useState } from "react"
+import React, { useState } from "react"
 import { scroller } from "react-scroll";
 
 import "../pages/MainPage.css"
-//     // Scroll Reveal
-//     // ScrollReveal().reveal('.services .grid .card');
 
-//     $('.square.blue').on('inview', function (event, isInView) {
-//         if (isInView) {
-//             // element is now visible in the viewport
-//             $(this).addClass("in-view");
-//         } else {
-//             // element has gone out of viewport
-//             $(this).removeClass("in-view");
-//         }
-//     });
-// });
+// Define an interface for the props
+interface NavBarProps {
+    siteName: string;
+    // Add other expected props here
+}
 
-
-
-function NavBar(props: any) {
+function NavBar(props: NavBarProps) {
 
     const [isOpen, setIsOpen] = useState(false)
     const onNavBarClick = () => {

@@ -1,4 +1,4 @@
-
+import React from "react";
 function MainPageHeader() {
     return (<div className="header">
         <div className="headerWrapper">
